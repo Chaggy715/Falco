@@ -74,6 +74,15 @@ h1 {
   color: #023e8a;
 }
 
+.link{
+  font-size: 18px;
+  padding: 20px;
+  margin-left: -800px;
+  color: #0077b6;
+  display: block;
+  font-weight: 700;
+}
+
 #menu {
   display: none;
 }
