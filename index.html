@@ -1,14 +1,386 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Falco</title>
-    <link rel="stylesheet" href="/public/css/index-S.css?v=1">
-</head>
-<body>
-    <h1>Falco</h1>
-    <p>Tu mejor opción para volar</p>
-    <img src="/public/images/The rock dora.jpg" alt="">
-</body>
+    <script
+      src="https://kit.fontawesome.com/bf8808a70e.js?v=1"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/public/css/index-S.css?v=1" />
+  </head>
+  <body>
+    <header id="H" class="header">
+      <div class="menu container">
+        <a href="#H" class="logo"
+          ><img src="/public/images/Logo.png" alt=""
+        /></a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="/public/images/menu.png" class="menu-icono" alt="" />
+        </label>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#H">Inicio</a></li>
+            <li><a href="#I">Nosotros</a></li>
+            <li><a href="#d">Destinos</a></li>
+            <li><a href="#E">Logos</a></li>
+            <li><a href="#C">Características</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-content container">
+        <h1>Falco</h1>
+        <p>La Nueva Forma de Volar</p>
+        <a href="#d" class="btn-1 v">Comprar Vuelo</a>
+      </div>
+    </header>
+
+    <section class="coffee">
+      <div id="I"></div>
+      <img class="coffee-img" src="images/bg2.png" alt="" />
+      <div class="coffee-content container">
+        <h2>Información de Nuestra Empresa</h2>
+        <p class="txt-p">
+          Falco Airlines, una aerolínea innovadora con sede en Nueva York,
+          ha llegado para revolucionar los cielos. Inspirada en el halcón peregrino,
+          el ave más rápida del mundo, Falco combina velocidad, eficiencia y precisión para ofrecer
+          a sus pasajeros una experiencia incomparable. Comprometida con la excelencia, Falco Airlines
+          toma las características de su emblema como filosofía de servicio: rapidez en cada operación,
+          agilidad en la atención a sus clientes y una visión clara hacia el futuro de la aviación. Desde
+          vuelos nacionales hasta rutas internacionales, la compañía se enfoca en conectar destinos con el
+          menor tiempo posible, manteniendo altos estándares de confort y seguridad.
+        </p>
+      </div>
+    </section>
+
+    <main class="services-container">
+      <div id="d"></div>
+      <h1>Los Mejores Destinos</h1>
+      <div class="destinations">
+        <div class="destination">
+          <img src="/public/images/Destinations/1- NY.png" alt="Melbourne" />
+          <div class="details">
+            <h2>Nueva York</h2>
+            <p>05 Nov 2024 - 12 Nov 2024</p>
+            <p>Economy from USD 1452*</p>
+            <button class="book-now">Comprar</button>
+            <button class="discover">Descubrir</button>
+          </div>
+        </div>
+        <div class="destination">
+          <img
+            src="/public/images/Destinations/2- Los santos.jpg"
+            alt="Beijing"
+          />
+          <div class="details">
+            <h2>Los Santos</h2>
+            <p>03 Nov 2024 - 10 Nov 2024</p>
+            <p>Economy from USD 1494*</p>
+            <button class="book-now">Comprar</button>
+            <button class="discover">Descubrir</button>
+          </div>
+        </div>
+        <div class="destination">
+          <img
+            src="/public/images/Destinations/3- hong kong.png"
+            alt="Nairobi"
+          />
+          <div class="details">
+            <h2>Hong Kong</h2>
+            <p>10 Nov 2024 - 17 Nov 2024</p>
+            <p>Economy from USD 890*</p>
+            <button class="book-now">Comprar</button>
+            <button class="discover">Descubrir</button>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="/public/images/Destinations/4- bangkok.png" alt="Bangkok" />
+          <div class="details">
+            <h2>Bangkok</h2>
+            <p>28 Dec 2024 - 21 Jan 2025</p>
+            <p>Premium from USD 5816*</p>
+            <button class="book-now">Comprar</button>
+            <button class="discover">Descubrir</button>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="/public/images/Destinations/5- santiago.png" alt="Tokyo" />
+          <div class="details">
+            <h2>Santiago</h2>
+            <p>15 Jan 2025 - 22 Jan 2025</p>
+            <p>Economy from USD 1200*</p>
+            <button class="book-now">Comprar</button>
+            <button class="discover">Descubrir</button>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="/public/images/Destinations/6- osaka.png" alt="Paris" />
+          <div class="details">
+            <h2>Osaka</h2>
+            <p>01 Feb 2025 - 08 Feb 2025</p>
+            <p>Economy from USD 950*</p>
+            <button class="book-now">Comprar</button>
+            <button class="discover">Descubrir</button>
+          </div>
+        </div>
+
+        <button id="load-more" class="load-more btn-1">
+          Mostrar más destinos
+        </button>
+
+        <div class="hidden-destinations">
+          <div class="destination">
+            <img
+              src="/public/images/Destinations/7- londres.png"
+              alt="London"
+            />
+            <div class="details">
+              <h2>Londres</h2>
+              <p>10 Mar 2025 - 17 Mar 2025</p>
+              <p>Economy from USD 1100*</p>
+              <button class="book-now">Comprar</button>
+              <button class="discover">Descubrir</button>
+            </div>
+          </div>
+          <div class="destination">
+            <img
+              src="/public/images/Destinations/8- singapur.png"
+              alt="Sydney"
+            />
+            <div class="details">
+              <h2>Singapur</h2>
+              <p>20 Apr 2025 - 27 Apr 2025</p>
+              <p>Economy from USD 1300*</p>
+              <button class="book-now">Comprar</button>
+              <button class="discover">Descubrir</button>
+            </div>
+          </div>
+          <div class="destination">
+            <img
+              src="/public/images/Destinations/9- santorini.png"
+              alt="Cairo"
+            />
+            <div class="details">
+              <h2>santorini</h2>
+              <p>05 May 2025 - 12 May 2025</p>
+              <p>Economy from USD 800*</p>
+              <button class="book-now">Comprar</button>
+              <button class="discover">Descubrir</button>
+            </div>
+          </div>
+          <div class="destination">
+            <img src="/public/images/Destinations/10- dubai.png" alt="Dubai" />
+            <div class="details">
+              <h2>Dubai</h2>
+              <p>15 Jun 2025 - 22 Jun 2025</p>
+              <p>Economy from USD 950*</p>
+              <button class="book-now">Comprar</button>
+              <button class="discover">Descubrir</button>
+            </div>
+          </div>
+          <div class="destination">
+            <img src="/public/images/Destinations/11- Vegas.png" alt="Dubai" />
+            <div class="details">
+              <h2>Las Vegas</h2>
+              <p>15 Jun 2025 - 22 Jun 2025</p>
+              <p>Economy from USD 950*</p>
+              <button class="book-now">Comprar</button>
+              <button class="discover">Descubrir</button>
+            </div>
+          </div>
+          <div class="destination">
+            <img src="/public/images/Destinations/12- rio.png" alt="Dubai" />
+            <div class="details">
+              <h2>Rio de Janeiro</h2>
+              <p>15 Jun 2025 - 22 Jun 2025</p>
+              <p>Economy from USD 950*</p>
+              <button class="book-now">Comprar</button>
+              <button class="discover">Descubrir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="coffee1">
+      <div id="E"></div>
+      <div class="coffee1-content container">
+        <h1>Nuestra Empresa</h1>
+        <div class="coffee1-center">
+          <img src="/public/images/L1.png" alt="Original" />
+          <h3>Original</h3>
+        </div>
+        <div class="coffee1-group">
+          <div class="coffee1-1">
+            <img src="/public/images/L2.png" alt="" />
+            <h3>Ausencia de color</h3>
+          </div>
+          <div class="coffee1-1">
+            <img src="/public/images/L3.png" alt="" />
+            <h3>Monocromatico</h3>
+          </div>
+          <div class="coffee1-1">
+            <img src="/public/images/L4.png" alt="" />
+            <h3>Variación</h3>
+          </div>
+          <div class="coffee1-1">
+            <img src="/public/images/L5.png" alt="" />
+            <h3>Minimalista</h3>
+          </div>
+          <div class="coffee1-1">
+            <img src="/public/images/L6.png" alt="" />
+            <h3>Variación</h3>
+          </div>
+          <div class="coffee1-1">
+            <img src="/public/images/L7.png" alt="" />
+            <h3>Variación Patriotica</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="general">
+      <div id="C"></div>
+      <div class="general-1">
+        <h2>Asientos</h2>
+        <p>
+          Nosotros escogimos nuestros asientos por 3 simples razones:
+          <br><br>
+          - El plumaje del Halcón Peregrino
+          <br>
+          - El azul del cielo
+          <br>
+          - Y nuestro ocolor base
+        </p>
+      </div>
+      <div class="general-2"></div>
+    </section>
+
+    <section class="general">
+      <div class="general-3"></div>
+      <div class="general-1">
+        <h2>Check In</h2>
+        <p>
+          Es un area limpia con luces blancas, ese tono de azul que tanto nos representa
+          reflejando la tranquilidad que es volar en nuestra aerolinea.
+        </p>
+      </div>
+    </section>
+
+    <section class="general">
+      <div class="general-1">
+        <h2>Personal</h2>
+        <p>
+          Un uniforme clasico con el unico detalle de nuestro logo en el pecho y en el gorro,
+          especializadas en tener una relacion cliente - empresa extremadamente satsifactoria.
+        </p>
+      </div>
+      <div class="general-4"></div>
+    </section>
+
+    <section class="general">
+      <div class="general-5"></div>
+      <div class="general-1">
+        <h2>Boletos</h2>
+        <p>
+          Nuestro estilo unico de boletos, con toda la informacion, nuestro color azul con un degradado a mas claro,
+          como el cielo que estas apunto de ver de cerca.
+        </p>
+      </div>
+    </section>
+
+    <section class="general">
+      <div class="general-1">
+        <h2>Internacional</h2>
+        <p>
+          Tenemos vuelos por todo el  mundo! por supuesto, con la mas alta calidad para viajar. <br>
+          Vuela alto vuela Falco.
+        </p>
+      </div>
+      <div class="general-6"></div>
+    </section>
+
+    <section class="blog container">
+      <h2>Blog</h2>
+      <p>Voluptate sunt asperiores consequatur</p>
+
+      <div class="blog-content">
+        <div class="blog-1">
+          <img src="images/blog1.jpg" alt="" />
+          <h3>Blog 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+            sunt asperiores consequatur non autem dolores deserunt, ab placeat
+            dolorem praesentium quae culpa quisquam odit fugit dicta nemo aut
+            soluta fugiat?
+          </p>
+        </div>
+        <div class="blog-1">
+          <img src="images/blog2.jpg" alt="" />
+          <h3>Blog 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+            sunt asperiores consequatur non autem dolores deserunt, ab placeat
+            dolorem praesentium quae culpa quisquam odit fugit dicta nemo aut
+            soluta fugiat?
+          </p>
+        </div>
+        <div class="blog-1">
+          <img src="images/blog3.jpg" alt="" />
+          <h3>Blog 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+            sunt asperiores consequatur non autem dolores deserunt, ab placeat
+            dolorem praesentium quae culpa quisquam odit fugit dicta nemo aut
+            soluta fugiat?
+          </p>
+        </div>
+      </div>
+      <a href="#" class="btn-1">Sin link</a>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content container">
+        <div class="link">
+          <h3>Redes</h3>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Tiktok</a></li>
+          </ul>
+        </div>
+        <div class="link">
+          <h3>Lorem</h3>
+          <ul>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+          </ul>
+        </div>
+        <div class="link">
+          <h3>Lorem</h3>
+          <ul>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+          </ul>
+        </div>
+        <div class="link">
+          <h3>Lorem</h3>
+          <ul>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="/public/js/index.js?v=1"></script>
+  </body>
 </html>
