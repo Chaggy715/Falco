@@ -432,6 +432,23 @@ h1 {
   width: 50%;
 }
 
+.general-7 {
+  background-image: url(/public/images/Halcón\ Peregrino.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 600px
+}
+
+.general-8 {
+  background-image: url(/public/images/paleta\ de\ colores1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
 h2 {
   font-size: 55px;
   line-height: 70px;
